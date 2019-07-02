@@ -1,0 +1,41 @@
+.center-img {
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+}
+
+p.first-para {
+    width: 250px;
+    height: 85px;
+    padding: 15px;
+    border: 1px solid #1ff0ff;
+    margin: 20px auto;
+    color: #ffffff;
+}
+
+p.quote-para {
+    width: 250px;
+    height: 75px;
+    padding: 15px;
+    border: 1px solid #1ff0ff;
+    margin: 20px auto;
+    color: #fff;
+}
+
+body {
+    background-color: #333;
+}
+
+.list {
+    color: #fff;
+}
+
+strong {
+    display: block;
+    width: 280px;
+    height: 20px;
+    padding: 15px;
+    border: 1px solid #1ff0ff;
+    margin: 20px auto;
+    color: #fff;
+}
