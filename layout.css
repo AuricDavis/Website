@@ -1,3 +1,7 @@
+body, html {
+    height: 100%;
+}
+
 .center-img {
     display: block;
     margin: 0 auto;
@@ -24,7 +28,6 @@ p.quote-para {
 
 body {
     background-color: #333;
-    font-family:
 }
 
 .li {
@@ -52,4 +55,14 @@ strong {
     height: 25px;
     padding: 15px;
     margin: 10px auto;
+}
+
+h1 {
+    color: #fff;
+    width: 275px;
+    height: 1em;
+    padding: 15px;
+    margin: 10px auto;
+    border: 1px solid #1ff0ff;
+    text-align: center;
 }

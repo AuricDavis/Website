@@ -1,0 +1,11 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: url(DSCN1104.JPG);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

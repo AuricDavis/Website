@@ -1,0 +1,21 @@
+.red-topnav {
+    background-color: red;
+    overflow: hidden;
+    font-family: Georgia, Times, serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.red-topnav a {
+    float: left;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.red-topnav a:hover {
+    background-color: #000;
+    color: red;
+}
