@@ -1,6 +1,10 @@
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #1ff0ff;
 }
 th, td {
     padding: 15px;
+}
+.table {
+    table-layout: fixed;
+    width: 400px;
 }

@@ -24,10 +24,16 @@ p.quote-para {
 
 body {
     background-color: #333;
+    font-family:
 }
 
-.list {
+.li {
     color: #fff;
+    width: 300px;
+    height: 115px;
+    padding: 15px;
+    border: 1px solid #1ff0ff;
+    margin: 10px auto;
 }
 
 strong {
@@ -38,4 +44,12 @@ strong {
     border: 1px solid #1ff0ff;
     margin: 20px auto;
     color: #fff;
+}
+
+.first-li {
+    color: #fff;
+    width: 50px;
+    height: 25px;
+    padding: 15px;
+    margin: 10px auto;
 }

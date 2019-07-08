@@ -1,0 +1,10 @@
+.fixed {
+    margin-left: 600px;
+    margin-top: 20px;
+    width: 600px;
+    color: #fff;
+}
+
+body {
+    background-color: #333;
+}
