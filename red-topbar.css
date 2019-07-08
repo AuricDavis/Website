@@ -1,8 +1,8 @@
 .red-topnav {
     background-color: red;
     overflow: hidden;
-    font-family: Georgia, Times, serif;
     text-transform: uppercase;
+    font-family: Georgia, Times, serif;
     font-weight: bold;
 }
 
