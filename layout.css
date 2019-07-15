@@ -66,3 +66,11 @@ h1 {
     border: 1px solid #1ff0ff;
     text-align: center;
 }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
