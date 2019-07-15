@@ -1,4 +1,7 @@
-function loadDoc() {
+let url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=5b269cb43b021859efb882bb3e9b017c";
+
+
+function updateTodayWeather() {
     
     //---------------------
     // This is where you would get references to all
@@ -12,12 +15,39 @@ function loadDoc() {
             
             //---------------------
             console.log("Successful...");
-            console.log(this.responseText);
+            // console.log(this.responseText);
             // This is where you would update the HTML elements above
             // with the data you pull from the API call response
             // document.getElementById("demo").innerHTML = this.responseText;
             //---------------------
+            // console.log(this.response);
             
+            let weatherDataDays = JSON.parse(this.response)
+            // console.log(weatherDataDays.list);
+            // console.log(weatherDataDays.list.length);
+            // console.log(weatherDataDays.list[0].main);
+            console.log(weatherDataDays);
+
+            let today = new Date();
+
+            let dayElement = document.querySelector('#day');
+            dayElement.innerText = today;
+            let conditionsElement = document.querySelector("#conditions");
+            conditionsElement.innerText = weatherDataDays.weather[0].main;
+
+            // let dayData = [];
+
+            // for(let counter = 0; counter < weatherDataDays.list.length; counter++) {
+
+
+
+            //     let currentDay = weatherDataDays.list[counter];
+            //     console.log(currentDay.main.temp);
+                
+
+
+            // }
+
         } else {
             
             //---------------------
@@ -35,5 +65,5 @@ function loadDoc() {
 // Make sure you call the function to begin the request for information
 // In the weather widget, you will want to call this function using the
 // onClick event of the form submit button
-loadDoc();
+updateTodayWeather();
 //---------------------
