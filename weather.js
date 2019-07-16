@@ -1,4 +1,4 @@
-let url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=5b269cb43b021859efb882bb3e9b017c";
+let url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&units=imperial&appid=5b269cb43b021859efb882bb3e9b017c";
 
 
 function updateTodayWeather() {
@@ -32,8 +32,14 @@ function updateTodayWeather() {
 
             let dayElement = document.querySelector('#day');
             dayElement.innerText = today;
-            let conditionsElement = document.querySelector("#conditions");
+            let conditionsElement = document.querySelector('#conditions');
             conditionsElement.innerText = weatherDataDays.weather[0].main;
+            let currentTempElement = document.querySelector('#currentTemp');
+            currentTempElement.innerText = weatherDataDays.main.temp;
+            let highTempElement = document.querySelector('#highTemp')
+            highTempElement.innerText = weatherDataDays.main.temp_max;
+            let lowTempElement = document.querySelector('#lowTemp');
+            lowTempElement.innerText = weatherDataDays.main.temp_min;
 
             // let dayData = [];
 
