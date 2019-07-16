@@ -1,4 +1,4 @@
-let url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&units=imperial&appid=5b269cb43b021859efb882bb3e9b017c";
+let url = "http://api.openweathermap.org/data/2.5/weather?id=5781993&units=imperial&appid=5b269cb43b021859efb882bb3e9b017c";
 
 
 function updateTodayWeather() {
@@ -29,32 +29,44 @@ function updateTodayWeather() {
             console.log(weatherDataDays);
 
             let today = new Date();
+            let week = [];
 
+            for (let i = 1; i <= 5; i++) {
+                let first = today.getDate() - today.getDay() + i;
+                let day = new Date(today.setDate(first)).toISOString().slice(0, 10);
+                week.push(day)
+                // console.log(week);
+            }
+            document.querySelector('#button').addEventListener("click", showWeather);
+
+            function showWeather() {
+                document.querySelector('#content').style.display = 'block';
+            }
             let dayElement = document.querySelector('#day');
             dayElement.innerText = today;
             let conditionsElement = document.querySelector('#conditions');
-            conditionsElement.innerText = weatherDataDays.weather[0].main;
+            conditionsElement.innerText = 'Weather: ' + weatherDataDays.weather[0].main;;
             let currentTempElement = document.querySelector('#currentTemp');
-            currentTempElement.innerText = weatherDataDays.main.temp;
+            currentTempElement.innerText = 'Current: ' + weatherDataDays.main.temp + '° F';
             let highTempElement = document.querySelector('#highTemp')
-            highTempElement.innerText = weatherDataDays.main.temp_max;
+            highTempElement.innerText = 'High: ' + weatherDataDays.main.temp_max + '° F';
             let lowTempElement = document.querySelector('#lowTemp');
-            lowTempElement.innerText = weatherDataDays.main.temp_min;
+            lowTempElement.innerText = 'Low: ' + weatherDataDays.main.temp_min + '° F';
 
-            // let dayData = [];
+        //     let dayData = [];
 
-            // for(let counter = 0; counter < weatherDataDays.list.length; counter++) {
+        //     for(let counter = 0; counter < weatherDataDays.list.length; counter++) {
 
 
 
-            //     let currentDay = weatherDataDays.list[counter];
-            //     console.log(currentDay.main.temp);
+        //         let currentDay = weatherDataDays.list[counter];
+        //         console.log(currentDay.main.temp);
                 
 
 
-            // }
+        //     }
 
-        } else {
+        // } else {
             
             //---------------------
             console.log("failure...")

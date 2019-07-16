@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <script src="weather.js"></script>
+        <script src="weather.js"></script>
+        <link rel="stylesheet" href="/weather.css">
+        <link rel="stylesheet" href="/topbar.css">
     </head>
     <body>
+        <header>
+            <nav>
+                <ul class="topnav">
+                    <a href="/index.html">Home</a>
+                    <a href="/interests.html">Interests</a>
+                    <a href="/favsites.html">Favorite Sites</a>
+                    <a href="/plans.html">Future Plans</a>
+                    <a href="/surprise.html">Surprise</a>
+                    <a href="/weatherwidget.html">Weather</a>
+                </ul>
+            </nav>
+        </header>
+        <button type="button" id="button">Click to show weather</button>
+        <h2>Weather (Spanish Fork, UT)</h2>
         <div id="content">
+            <div id="weatherButton"></div>
             <div id="place"></div>
             <div id="day"></div>
             <div id="conditions"></div>
