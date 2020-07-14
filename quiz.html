@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Monkey</title>
+        <link rel="stylesheet" href="topbar.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="layout.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="topnav">
+                    <a href="index.html">Home</a>
+                    <a href="interests.html">Interests</a>
+                    <a href="favsites.html">Favorite Sites</a>
+                    <a href="plans.html">Future Plans</a>
+                    <a href="surprise.html">Surprise</a>
+                    <a href="weatherwidget.html">Weather</a>
+                    <a href="present.html">Presentation</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="quiz.html">Quiz Monkey</a>
+                </ul>
+            </nav>
+        </header>
+        <form id="quiz">
+            <p>Which Pen is Best?</p>
+            <input type="radio" name="pen" class="quiz" id="fountain" value="Fountain Pen">
+            <label for="fountain">Fountain Pen</label><br>
+            <input type="radio" name="pen" class="quiz" id="ballpoint" value="Ballpoint">
+            <label for="ballpoint">Ballpoint</label><br>
+            <input type="radio" name="pen" class="quiz" id="rollerball" value="Rollerball">
+            <label for="rollerball">Rollerball</label><br>
+            
+            <p>Which body part is best?</p>
+            <input type="radio" name="body" class="quiz" id="arm" value="Arm">
+            <label for="arm">Arm</label><br>
+            <input type="radio" name="body" class="quiz" id="leg" value="Leg">
+            <label for="leg">Leg</label><br>
+            <input type="radio" name="body" class="quiz" id="head" value="Head">
+            <label for="head">Head</label><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+        
+        <p id="results"></p>
+        <script src="quiz.js"></script>
+    </body>
+</html>
